@@ -1,0 +1,6 @@
+# You either need to reload the library for the changes to apply or use the reload method in the Currency class.
+
+
+# This is for SQL executions
+thread-pools-amount: 5
+
