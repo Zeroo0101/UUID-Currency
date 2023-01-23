@@ -8,6 +8,7 @@ import java.util.UUID;
 public final class CurrencyHandler {
 
     private final HikariCPConfig hikariCPConfig;
+    
     public CurrencyHandler(){
         hikariCPConfig = Currency.getCurrency()
                 .getHikariCPConfig();
