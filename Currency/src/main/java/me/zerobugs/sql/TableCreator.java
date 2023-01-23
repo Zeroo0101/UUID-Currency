@@ -10,7 +10,6 @@ public class TableCreator {
         try {
             Statement statement = connection.createStatement();
             statement.executeUpdate(SQLQueries.CREATE_TABLE.getQuery());
-            System.out.println("Table created successfully!");
         } catch (SQLException exception) {
             System.err.println("Error creating table: " + exception.getMessage());
         }

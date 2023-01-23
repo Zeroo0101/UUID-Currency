@@ -24,6 +24,7 @@ public final class Currency{
     }
 
     public void reload(){
+        hikariCPConfig.closeConnection();
         onEnable();
     }
 

@@ -34,6 +34,14 @@ public final class HikariCPConfig extends CurrencyDAO{
         dataSource = new HikariDataSource(config);
     }
 
+    public void closeConnection(){
+        try {
+            connection.close();
+        } catch (SQLException exception){
+            exception.printStackTrace();
+        }
+    }
+
     public HikariDataSource getDataSource() {
         return dataSource;
     }
