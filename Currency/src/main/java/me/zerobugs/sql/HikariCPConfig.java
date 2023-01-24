@@ -9,8 +9,8 @@ import java.sql.SQLException;
 
 public final class HikariCPConfig extends CurrencyDAO{
 
-    private final HikariDataSource dataSource;
-    private final Connection connection;
+    private HikariDataSource dataSource;
+    private Connection connection;
 
     public HikariCPConfig(){
 
